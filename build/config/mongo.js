@@ -11,13 +11,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MONGO_DB = exports.db = void 0;
 const mongoose_1 = require("mongoose");
-const MONGO_USERNAME = 'rsalas';
-const MONGO_PASSWORD = '27538459';
-const MONGO_HOSTNAME = '192.168.100.70';
-const MONGO_PORT = '27017';
 const MONGO_DB = 'server-ts';
 exports.MONGO_DB = MONGO_DB;
-const url = `mongodb://${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}`;
+const url = `mongodb+srv://rsalas459:M4Rl3t_459@cluster0.jwiu8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 function db() {
     return __awaiter(this, void 0, void 0, function* () {
         const DB_URI = url;
