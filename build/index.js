@@ -10,6 +10,9 @@ const routes_1 = require("./routes");
 const mongo_1 = require("./config/mongo");
 const PORT = process.env.PORT || 3000;
 const app = (0, express_1.default)();
+app.get('/', (_req, res) => {
+    return res.send('Express Typescript on Vercel');
+});
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use(routes_1.router);
